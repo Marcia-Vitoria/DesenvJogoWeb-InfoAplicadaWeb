@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nave Perdida - Space Shooter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="game-container">
+        <!-- O Canvas é onde o jogo é desenhado -->
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+
+        <!-- Interface do HUD (Pontos e Vidas) -->
+        <div id="ui-layer">
+            <div id="score-board">Pontos: <span id="score">0</span></div>
+            <div id="lives-board">Vidas: <span id="lives">3</span></div>
+        </div>
+
+        <!-- Tela Inicial -->
+        <div id="start-screen" class="screen active">
+            <h1>NAVE PERDIDA</h1>
+            <p>Sua nave se perdeu no espaço. Volte para casa!</p>
+            <div class="controls-info">
+                <p>Mover: <strong>WASD</strong> ou <strong>Setas</strong></p>
+                <p>Atirar: <strong>Espaço</strong></p>
+            </div>
+            <button id="start-btn">Iniciar Missão</button>
+        </div>
+
+        <!-- Tela de Game Over -->
+        <div id="game-over-screen" class="screen">
+            <h1>FIM DE JOGO</h1>
+            <p>Sua nave foi destruída.</p>
+            <p>Pontuação Final: <span id="final-score">0</span></p>
+            <button id="restart-btn">Tentar Novamente</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
