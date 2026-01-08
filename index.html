@@ -3,36 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nave Perdida - Space Shooter</title>
+    <title>Alien Assault</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div id="game-container">
-        <!-- O Canvas é onde o jogo é desenhado -->
         <canvas id="gameCanvas" width="800" height="600"></canvas>
 
-        <!-- Interface do HUD (Pontos e Vidas) -->
         <div id="ui-layer">
             <div id="score-board">Pontos: <span id="score">0</span></div>
+            <div id="powerup-status"></div> <!-- Mostra status do powerup -->
             <div id="lives-board">Vidas: <span id="lives">3</span></div>
         </div>
 
-        <!-- Tela Inicial -->
         <div id="start-screen" class="screen active">
-            <h1>NAVE PERDIDA</h1>
-            <p>Sua nave se perdeu no espaço. Volte para casa!</p>
-            <div class="controls-info">
-                <p>Mover: <strong>WASD</strong> ou <strong>Setas</strong></p>
-                <p>Atirar: <strong>Espaço</strong></p>
-            </div>
-            <button id="start-btn">Iniciar Missão</button>
-        </div>
+    <h1>ALIEN ASSAULT</h1>
+    <p>A invasão começou, sua missão é sobreviver!</p>
 
-        <!-- Tela de Game Over -->
+    <div class="controls-info">
+        <div class="control-item">
+            <span class="key">▲ ▼ ◀ ▶</span>
+            <span class="label">Mover Nave</span>
+        </div>
+        <div class="control-item">
+            <span class="key">ESPAÇO</span>
+            <span class="label">Disparar Laser</span>
+        </div>
+    </div>
+
+    <div class="legend">
+        <span>💚 Vida</span>
+        <span>⚡ Tiro Duplo</span>
+        <span>🛡️ Escudo</span>
+    </div>
+
+    <button id="start-btn">Iniciar Missão</button>
+</div>
+
         <div id="game-over-screen" class="screen">
-            <h1>FIM DE JOGO</h1>
-            <p>Sua nave foi destruída.</p>
+            <h1>GAME OVER</h1>
             <p>Pontuação Final: <span id="final-score">0</span></p>
             <button id="restart-btn">Tentar Novamente</button>
         </div>
