@@ -16,10 +16,13 @@ O jogo conta com:
 - Efeitos sonoros gerados via Web Audio API
 - Tela inicial, tela do jogo e tela de game over
 
-**Acesso ao jogo**
+### **Acesso ao jogo:**
 
-O projeto está disponível através do **GitHub Pages** no link abaixo:
+O projeto está disponível através do **GitHub Pages** no link abaixo:  
  [Acesse aqui](https://marcia-vitoria.github.io/DesenvJogoWeb-InfoAplicadaWeb/)
+
+E também através do **Vercel** no link abaixo:  
+ [Acesse aqui](https://alienassaultgame.vercel.app/)
 
 ## 2. Tecnologias utilizadas
 
